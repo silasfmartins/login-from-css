@@ -186,35 +186,142 @@ button {
   margin-left: 0.25rem;
 }
 
-@media (max-width: 1024px) {
-  body {
+@media (max-width: 660px) {
+  #main-header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin-right: 2.5rem;
   }
-  header {
-    margin-right: 10rem;
+  main {
+    display: flex;
+    justify-content: center;
   }
   #side-image {
     display: none;
   }
   #form-background {
-    width: 100%;
-    border-radius: 0.25rem;
     background: none;
-    margin-left: 0rem;
+    margin-top: 2rem;
     padding-inline: 0rem;
-    padding-top: 5rem;
-    margin: auto;
-    margin-left: 12.5rem;
+    margin-left: 4rem;
   }
-  main {
-    gap: 0rem;
-    padding-inline: 2rem;
+  #header-form-div {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #header-form {
+    padding: 0;
+    width: 20.75rem;
+  }
+  p {
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #AFB6C2;
+    margin-top: 0rem;
+  }
+  .inputs {
+    margin-top: 1.5rem;
+  }
+  .input {
+    width: 17.5rem;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    border: 2px solid #868686;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  #checkbox-password {
+    width: 17.5rem;
+  }
+  button {
+    width: 17.5rem;
+  }
+  #create-account {
+    width: 17.5rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 660px) {
+  #main-header {
     display: flex;
     justify-content: center;
+    margin-right: 2.5rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  #side-image {
+    display: none;
+  }
+  #form-background {
+    background: none;
+    margin-top: 2rem;
+    padding-inline: 0rem;
+    margin-left: 7.5rem;
+  }
+  #header-form-div {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #header-form {
+    padding: 0;
+    width: 20.75rem;
+  }
+  p {
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #AFB6C2;
+    margin-top: 0rem;
+  }
+  .inputs {
+    margin-top: 1.5rem;
+  }
+  .input {
+    width: 17.5rem;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    border: 2px solid #868686;
+    display: flex;
+    gap: 1.5rem;
     align-items: center;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  #checkbox-password {
+    width: 17.5rem;
+  }
+  button {
+    width: 17.5rem;
+  }
+  #create-account {
+    width: 17.5rem;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 1024px) {
+  #main-header {
+    display: flex;
+    justify-content: center;
+    margin-right: 2.5rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  #side-image {
+    display: none;
+  }
+  #form-background {
+    background: none;
+    margin-top: 2rem;
+    padding-inline: 0rem;
+    margin-left: 12rem;
   }
   #header-form-div {
     display: flex;
