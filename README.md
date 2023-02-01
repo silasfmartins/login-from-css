@@ -8,7 +8,7 @@
 
 
 ## 💻 Projeto
-Landing Page que mostra três opções de serviços a serem assinados pelo usuário.
+Landing Page de uma página de login.
 
 ## 🔃 Requisitos para utilizar
 
@@ -21,7 +21,7 @@ Landing Page que mostra três opções de serviços a serem assinados pelo usuá
 
 ## :hammer_and_wrench: Features 
 
--   [ ] Landing page mostra diferentes serviços para assinar.
+-   [ ] Landing page mostra o layout de uma página de login.
 
 ## 🆚 Versionamento / Versioning
 
