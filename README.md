@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Login From CSS" height="80" title="Login From CSS" src="./images/favicon.ico" />
+  <img alt="Login From CSS" height="80" title="Login From CSS" src="./favicon.ico" />
 </h1>
 
 <p align="center">
