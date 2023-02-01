@@ -193,6 +193,9 @@ button {
     justify-content: center;
     align-items: center;
   }
+  header {
+    margin-right: 10rem;
+  }
   #side-image {
     display: none;
   }
@@ -204,7 +207,7 @@ button {
     padding-inline: 0rem;
     padding-top: 5rem;
     margin: auto;
-    margin-left: 7.5rem;
+    margin-left: 12.5rem;
   }
   main {
     gap: 0rem;
@@ -216,6 +219,10 @@ button {
   #header-form-div {
     display: flex;
     gap: 0.5rem;
+  }
+  #header-form {
+    padding: 0;
+    width: 20.75rem;
   }
   p {
     font-size: 0.825rem;
