@@ -18,6 +18,7 @@ Landing Page de uma página de login.
 
 -   [ x ] HTML
 -   [ x ] CSS
+-   [ x ] Javascript
 
 ## :hammer_and_wrench: Features 
 
