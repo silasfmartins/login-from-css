@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  background: #191816;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 2.5rem;
+}
+
+#main-header {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+}
+
+.switcher-label {
+  padding: 1rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3rem;
+  height: 0.5rem;
+  background: #121214;
+  justify-content: space-around;
+  gap: 3rem;
+  margin-top: 0.25rem;
+}
+
+.checkbox:checked + label .ball {
+  margin-left: 12rem;
+  transform: translateX(4px);
+}
+
+.ball {
+  border-radius: 100%;
+  padding: 1rem;
+  background: #F1F1F1;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+  position: absolute;
+  margin-right: 6rem;
+}
+
+main {
+  display: flex;
+  margin-top: -7rem;
+  gap: 4.5rem;
+}
+
+#form-background {
+  width: 35.75rem;
+  height: 32rem;
+  border-radius: 0.25rem;
+  background: #24221F;
+  margin-left: 4.5rem;
+  margin-top: 12rem;
+  padding-inline: 4rem;
+  padding-top: 3.75rem;
+}
+
+#header-form {
+  padding: 0;
+  width: 20.75rem;
+}
+
+#header-form-div {
+  display: flex;
+  gap: 2rem;
+}
+
+body.light {
+  background: #fff;
+}
+
+body.light #form-background {
+  background: #F1F1F1;
+}
+
+body.light h1, body.light p, body.light h1, body.light label {
+  color: black;
+}
+
+body.light #create-account {
+  color: #b08925;
+}
+
+body.light span {
+  color: #765c18;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #D4CCB6;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #AFB6C2;
+  margin-top: 1.25rem;
+}
+
+.inputs {
+  margin-top: 1.75rem;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #AFB6C2;
+}
+
+.input {
+  width: 20.75rem;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  border: 2px solid #868686;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.input:hover {
+  border: 2px solid #FFC632;
+}
+
+.svgs {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.75rem;
+}
+
+input {
+  background: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #AFB6C2;
+  border: none;
+  resize: none;
+  width: 100%;
+}
+
+.input:focus-within {
+  border: 2px solid #FFC632;
+}
+
+#eye {
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+#checkbox-password {
+  width: 20.75rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#div-check {
+  cursor: pointer;
+}
+
+#div-check input {
+  display: none;
+}
+
+#div-check input + label:before {
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid #868686;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+#div-check input:checked + label:before {
+  background-color: #FFC632;
+  background-image: url(./images/check.svg);
+  background-position: center;
+  border: none;
+  padding: 0.0625rem;
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #FFC632;
+  cursor: pointer;
+}
+
+button {
+  width: 20.75rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  background: #FFC632;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #473404;
+  border: none;
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+#create-account {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #FFC632;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+#create-account-2 {
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 660px) {
+  #main-header {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 4rem;
+  }
+  .ball {
+    margin-left: 1rem;
+  }
+  .checkbox:checked + label .ball {
+    margin-left: 10rem;
+    transform: translateX(4px);
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  #side-image {
+    display: none;
+  }
+  #form-background {
+    width: 22rem;
+    margin-right: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #header-form-div {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 2rem;
+  }
+  #header-form {
+    padding: 0;
+    width: 20.75rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #AFB6C2;
+    margin-top: 0rem;
+  }
+  .inputs {
+    margin-top: 1.5rem;
+  }
+  .input {
+    width: 17.5rem;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    border: 2px solid #868686;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  label {
+    font-size: 0.75rem;
+  }
+  #checkbox-password {
+    width: 17.5rem;
+  }
+  button {
+    width: 17.5rem;
+  }
+  #create-account {
+    width: 17.5rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 660px) {
+  #main-header {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-left: 4rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  #side-image {
+    display: none;
+  }
+  #form-background {
+    width: 25rem;
+    margin-right: 4rem;
+  }
+  #header-form-div {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #header-form {
+    padding: 0;
+    width: 20.75rem;
+  }
+  p {
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #AFB6C2;
+    margin-top: 0rem;
+  }
+  .inputs {
+    margin-top: 1.5rem;
+  }
+  .input {
+    width: 17.5rem;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    border: 2px solid #868686;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  #checkbox-password {
+    width: 17.5rem;
+  }
+  button {
+    width: 17.5rem;
+  }
+  #create-account {
+    width: 17.5rem;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 1024px) {
+  #main-header {
+    display: flex;
+    justify-content: center;
+    margin-right: 2.5rem;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+  }
+  #side-image {
+    display: none;
+  }
+  #form-background {
+    width: 25rem;
+  }
+  #header-form-div {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #header-form {
+    padding: 0;
+    width: 20.75rem;
+  }
+  p {
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    color: #AFB6C2;
+    margin-top: 0rem;
+  }
+  .inputs {
+    margin-top: 1.5rem;
+  }
+  .input {
+    width: 17.5rem;
+    height: 2.75rem;
+    border-radius: 0.25rem;
+    border: 2px solid #868686;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  #checkbox-password {
+    width: 17.5rem;
+  }
+  button {
+    width: 17.5rem;
+  }
+  #create-account {
+    width: 17.5rem;
+  }
+}
+
+:root {
+  scrollbar-color: #FFC632 #473404 ;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track{
+  background: #473404;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFC632;
+  border-radius: 14px;
+}

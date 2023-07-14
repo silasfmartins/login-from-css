@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Camp.in</title>
+</head>
+<body>
+  <header id="main-header">
+    <img src="./images/logo.svg" alt="Logo">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label class="switcher-label" for="checkbox">
+      <img width="20" class="switcher-img" src="./images/moon.svg" alt="Moon - Lua">
+      <img width="20" class="switcher-img" src="./images/sun.svg" alt="Sun - Sol">
+      <div class="ball"></div>
+    </label>
+  </header>
+  <main>
+    <div id="form-background">
+      <header id="header-form">
+        <div id="header-form-div">
+          <img src="./images/log-in.svg" alt="log-in">
+          <h1>Faça seu login</h1>
+        </div>
+        <p>Entre com suas informações de cadastro.</p>
+      </header>
+      <form>
+        <div class="inputs">
+          <label for="e-mail">E-mail</label>
+          <div class="input">
+            <img class="svgs" src="./images/mail.svg" alt="mail">
+            <input placeholder="Digite seu e-mail" type="email" required>
+          </div>
+        </div>
+        <div class="inputs">
+          <label for="password">Senha</label>
+          <div class="input">
+            <img class="svgs" src="./images/lock.svg" alt="lock">
+            <input placeholder="Digite sua senha" type="password" minlength="8" maxlength="50" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\W+)(?=^.{8,50}$).*$" required>
+            <img id="eye" src="./images/eye.svg" alt="eye - olho">
+          </div>
+        </div>
+        <div id="checkbox-password">
+          <div id="div-check"><input id="check" type="checkbox"><label for="check">Lembre-me</label></div>
+          <span>Esqueci minha senha</span>
+        </div>
+        <button type="submit">Entrar</button>
+        <span id="create-account">Não tem uma conta?<span id="create-account-2">Registre-se</span></span>
+      </form>
+    </div>
+    <img id="side-image" src="./images/side-image.jpg" alt="Side Image - Imagem do Lado">
+  </main>
+</body>
+<script src="./script.js"></script>
+</html>
