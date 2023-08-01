@@ -21,6 +21,7 @@ header {
   display: flex;
   align-items: center;
   gap: 16rem;
+  margin-top: -4rem;
 }
 
 .checkbox {
