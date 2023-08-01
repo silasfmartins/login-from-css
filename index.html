@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Silas Martins">
+  <meta name="author" content="Site que representa um login em um site de viagens">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +18,8 @@
     <img src="./images/logo.svg" alt="Logo. Tem uma imagem de uma A sobre o outro e do lado um texto escrito camp.in">
     <input type="checkbox" class="checkbox" id="checkbox">
     <label class="switcher-label" for="checkbox">
-      <img width="20" class="switcher-img" src="./images/moon.svg" alt="Yellow Moon - Lua Amarela">
-      <img width="20" class="switcher-img" src="./images/sun.svg" alt="Yellow Sun, this sun has a ball in the center and streaks around it - Sol Amarelo com uma bola no centro e alguns riscos em volta.">
+      <img width="20" height="100" class="switcher-img" src="./images/moon.svg" alt="Yellow Moon - Lua Amarela">
+      <img width="20" height="100" class="switcher-img" src="./images/sun.svg" alt="Yellow Sun, this sun has a ball in the center and streaks around it - Sol Amarelo com uma bola no centro e alguns riscos em volta.">
       <div class="ball"></div>
     </label>
   </header>
@@ -56,6 +58,17 @@
     </div>
     <img id="side-image" src="./images/side-image.jpg" alt="Side Image - Imagem do Lado">
   </main>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
 </body>
 <script src="./script.js"></script>
 </html>
